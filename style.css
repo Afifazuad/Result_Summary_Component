@@ -1,0 +1,32 @@
+@font-face{
+    font-family: 'Hanken Grotesk ExtraBold';
+    src: url('./assets/fonts/HankenGrotesk-ExtraBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+.result{
+    background-color: #7755FF;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    background-color: #4d21c9;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-value{
+    font-family: 'Hanken Grotesk ExtraBold';
+    font-size: 72px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+}

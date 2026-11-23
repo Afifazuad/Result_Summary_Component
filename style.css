@@ -1,12 +1,23 @@
 @font-face{
     font-family: 'Hanken Grotesk ExtraBold';
-    src: url('./assets/fonts/HankenGrotesk-ExtraBold.woff2') format('woff2');
+    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('woff2');
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Hanken Grotesk Bold';
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('woff2');
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Hanken Grotesk Medium';
+    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('woff2');
     font-style: normal;
 }
 
 body{
     padding: 0px;
     margin-top: 15%;
+    background-color: #F3F4Fd;
 }
 
 
@@ -15,7 +26,6 @@ body{
     flex-direction: row;
     border: black solid 1px;
     justify-content: center;
-    gap: 32px;
 }
 
 .result{
@@ -25,6 +35,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 45px 54px;
 }
 
 .score{
@@ -38,11 +49,53 @@ body{
     align-items: center;
 }
 
+.result > h1{
+    font-family: 'Hanken Grotesk Bold';
+    color: #CAC9FF;
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
 .score-value{
     font-family: 'Hanken Grotesk ExtraBold';
     font-size: 72px;
     color: #FFFFFF;
     letter-spacing: 0px;
+    margin: 0px;
+}
+
+.score-max{
+    font-family: 'Hanken Grotesk Bold';
+    color: #CAC9FF;
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin: 0px;
+    opacity: 0.50;
+}
+
+.result_description{
+    /* display: flex; */
+    gap: 16px;
+}
+
+.description_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk Bold';
+    font-size: 32px;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.description_text{
+    font-family: 'Hanken Grotesk Medium';
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #CAC9FF;
+    text-align: center;
 }
 
 .summary{
@@ -50,6 +103,15 @@ body{
     gap: 32px;
     display: flex;
     flex-direction: column;
+    padding: 40px 44.5px;
+}
+
+.summary > h1{
+    font-family: 'Hanken Grotesk Bold';
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #303B59;
+    margin: 0px;
 }
 
 .summary_list{
@@ -57,8 +119,6 @@ body{
     flex-direction: column;
     gap: 16px;
     width: 288px;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .summary_item_1, .summary_item_2, .summary_item_3, .summary_item_4{

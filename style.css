@@ -18,18 +18,28 @@ body{
     padding: 0px;
     margin-top: 15%;
     background-color: #F3F4Fd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .container{
     display: flex;
     flex-direction: row;
-    border: black solid 1px;
+    /* border: black solid 1px; */
     justify-content: center;
+    background-color: #ffffff;
+    border-radius: 32px;
+    /* width: 736px; */ 
+    /*kenapa tak tetap kan width ni, sebab taknak hard code. kita biar dia tentukan sendiri
+    width dia ikut content dia, dengan cara letakkan parent dia display flex,
+    div tag biasanya akan melebar penuh ikut parent dia.*/
 }
 
 .result{
-    background-color: #7755FF;
+    background: linear-gradient(to bottom, #7755ff, #2f2ce9);
     border-radius: 32px;
     display: flex;
     flex-direction: column;
@@ -39,7 +49,7 @@ body{
 }
 
 .score{
-    background-color: #4d21c9;
+    background: linear-gradient(to bottom, #4d21c9, #2521c9);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -99,11 +109,12 @@ body{
 }
 
 .summary{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     gap: 32px;
     display: flex;
     flex-direction: column;
     padding: 40px 44.5px;
+    /* background-color: #ffffff; */
 }
 
 .summary > h1{
@@ -167,6 +178,24 @@ body{
     color: #1125d6; 
 }
 
+.item_label_1 > p, .item_label_2 > p, .item_label_3 > p, .item_label_4 > p{
+    font-family: 'Hanken Grotesk Medium';
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+
+.score_summary{
+    font-family: 'Hanken Grotesk Bold';
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #303B59;
+}
+
+.score-max_summary{
+    opacity: 0.50;
+}
+
 button{
     background-color: #303b59;
     border: none;
@@ -174,4 +203,7 @@ button{
     width: 288px;
     height: 56px;
     color: #FFFFFF;
+    font-family: 'Hanken Grotesk Medium';
+    font-size: 15px;
+    letter-spacing: 0px;
 }
